@@ -88,7 +88,7 @@ int print_octal(va_list arglist, char buffer[],
 int print_hexadecimal(va_list arglist, char buffer[],
 	int flags, int width, int acc, int size)
 {
-	return (print_hexa(types, "0123456789abcdef", buffer,
+	return (print_hexa(arglist, "0123456789abcdef", buffer,
 		flags, 'x', width, acc, size));
 }
 
